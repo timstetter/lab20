@@ -23,8 +23,12 @@ select * from orders order by OrderID limit 100;
 
 5. Get all customers that live in the postal codes 1010, 3012, 12209, and 05023.
 
+select * from Customers where PostalCode in ('1010', '3012', '12209', '05023');
+
 
 6. Get all orders where the ShipRegion is not equal to NULL.
+
+select * from orders where ShipRegion is not null;
 
 
 7. Get all customers ordered by the country, then by the city.
